@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson08_CSS_Imortant</title>
+    <style>
+        /*aduma priority ek athi element style ekt priority eka 
+        denna onnam element eke color ekt issrhin
+        !important kyl dnna(h1 eke wge)*/
+
+        /*important tag ek gdk use krn na..csswla complexcity eka wadi weno
+        Ex-*/
+        h1{
+            color: red !important;
+        }
+
+        .title{
+            color: black;
+        }
+
+        #main-title{
+            color: blueviolet;
+        }
+
+        /*meke element selector dekk use kra atha*/
+        div h1{
+            color: aqua;
+        }
+
+        .container #main-title{
+            color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+         <h1 class="title" id="main-title" style="color: blue;">CSS Important</h1>
+    </div>
+</body>
+</html>

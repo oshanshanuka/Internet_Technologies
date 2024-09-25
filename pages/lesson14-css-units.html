@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson14_CSS_units</title>
+</head>
+<body>
+    <h1>CSS Units</h1>
+
+    ====1.Pixels(px)====
+
+    <p style="font-size: 20px;">Hello guys!!</p>
+
+    </br>
+
+    ====2.Centimeters(cm)====
+
+    <div style="width: 5cm;height: 5cm; border: 1cm solid black; margin-top: 1cm;"></div>
+    </br>
+
+    ====3.Millimeters(mm)====
+
+    <div style="width: 40mm;height:40mm; border: 10mm solid black; margin-top: 10mm;"></div>
+    </br>
+
+    ====4.Inches(in)====
+
+    <div style="width:2in;height:2in; border: 1in solid black; margin-top: 1in;"></div>
+    </br>
+
+    ====5.Percentage(%)====
+
+    <div style="width: 50%; height: 150px; background-color:navy;">
+        <div style="width: 50%;height: 150px;background-color: yellow;"></div>
+    </div>
+    </br>
+
+    ====6.em====
+    <!--em eken krnne parentge deela size eka gni-->
+
+    <div style="font-size: 8px;">
+        <p style="font-size: 1em;">Hello world!!</p><!--meka inspect krm font size eka 8px lesa penwai.reason eka div eke(parentge) 8px value eka 1em eken guna kra atha-->
+        <p style="font-size: 1.5em;">Hello world!!</p><!--meka inspect krm font size eka 12px lesa penwai.reason eka div eke(parentge) value eka 1.5wlin wadi krgena atha-->
+        <p style="font-size: 2em;">Hello world!!</p><!--meka inspect krm font size eka 12px lesa penwai.reason eka div eke(parentge) value eka 2gunykin wadi krgena atha-->
+        <!--meke parentge value ekk deela nththn dafult value ekk lba gani-->
+    </div>
+    </br>
+
+    ====7.rem====
+
+    <p style="font-size: 1rem;">Hello Java</p>
+    <p style="font-size: 1.5rem;">Hello Java</p>
+    <p style="font-size: 2rem;">Hello Java</p>
+    <!--meke kelinma parent eka root ekai-->
+    <!--font size ekk deno nm hodm type eka thmai rem. web browser eke settingswlin font size wens kroth
+    pxwlin dunna ewa wena nowe.remwlin dunna fontwla sizes wens wei.-->
+    </br>
+
+    ====8.Viewport width(vw)====
+    </br>
+
+    <div style="background-color: aqua;width: 50vw;height: 100px;"></div>
+    <!--1% of viewport width=1vw-->
+    <!--50% width ekk dunn nisa browser width eken hrytm bgyk gni-->
+
+    ====9.Viewport Hieght====
+    </br>
+    <div style="background: red; height: 50vh;width: 200px;"></div>
+
+</body>
+</html>

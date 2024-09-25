@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson16_css_positions</title>
+    <style>
+        .box1{
+            /*====1.static position====*/
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+
+            /*====2.relative position====
+            api dena position ekt add wei
+            position: relative;
+            top: 50px;
+            left: 50px;*/
+
+            /*====3.Absolute position====
+            absolute eke apit ona box ekt relative position ekk diya haka.
+            position: relative;*/
+
+            /*====4.fixed position====
+             position: fixed;
+             top: 50px;
+             left: 50px;*/
+
+             position: sticky;
+             top: 50px;
+             right: 50px;
+
+        }
+        .box2{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+
+            /*====2.relative position====
+            position: relative;
+            top: 0;
+            left: 0;*/
+
+           /*====3.Absolute position====*/
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Positions</h1>
+
+    <!--====1.Static position====
+    </br>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    -->
+
+    <!--====3.Absolute position====
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    -->
+
+    <!--====4.Fixed position====
+    <div class="box1">
+        <div class="box2"></div>
+    </div>-->
+
+    ====5.Sticky position====
+
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <p style="font-size: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Nihil asperiores maxime necessitatibus tenetur! Magnam commodi eligendi vel enim? Alias, 
+    incidunt ipsam veritatis maxime tempora fugit illum assumenda vitae commodi. Facilis ut 
+    id illo placeat, laborum voluptates aliquid fuga temporibus labore neque incidunt, dolores 
+    cupiditate hic tempora harum. Libero officiis et asperiores, sapiente impedit id at ex 
+    error eius quam nobis sit maxime molestias eligendi, itaque aut quaerat molestiae, dignissimos 
+    cum repellendus minima fugit. Unde nesciunt adipisci deleniti et harum pariatur laborum 
+    doloribus a placeat. Iste possimus sapiente suscipit doloribus aperiam, illum, provident 
+    aspernatur, culpa optio ratione laboriosam ea corrupti quisquam voluptates. Molestiae, maxime 
+    fugit! Itaque officia nam quos esse nobis reprehenderit obcaecati enim molestiae soluta sit 
+    quis inventore dicta doloribus tempore iusto explicabo et libero assumenda, mollitia, velit, 
+    nulla beatae omnis! Accusamus, perspiciatis! Laborum repellendus quidem sunt praesentium 
+    perspiciatis aut, blanditiis perferendis impedit esse architecto ipsa in harum! Voluptatem, cumque!</p>
+
+    <p style="font-size: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Nihil asperiores maxime necessitatibus tenetur! Magnam commodi eligendi vel enim? Alias, 
+    incidunt ipsam veritatis maxime tempora fugit illum assumenda vitae commodi. Facilis ut 
+    id illo placeat, laborum voluptates aliquid fuga temporibus labore neque incidunt, dolores 
+    cupiditate hic tempora harum. Libero officiis et asperiores, sapiente impedit id at ex 
+    error eius quam nobis sit maxime molestias eligendi, itaque aut quaerat molestiae, dignissimos         cum repellendus minima fugit. Unde nesciunt adipisci deleniti et harum pariatur laborum 
+    doloribus a placeat. Iste possimus sapiente suscipit doloribus aperiam, illum, provident 
+    aspernatur, culpa optio ratione laboriosam ea corrupti quisquam voluptates. Molestiae, maxime 
+    fugit! Itaque officia nam quos esse nobis reprehenderit obcaecati enim molestiae soluta sit 
+    quis inventore dicta doloribus tempore iusto explicabo et libero assumenda, mollitia, velit, 
+    nulla beatae omnis! Accusamus, perspiciatis! Laborum repellendus quidem sunt praesentium 
+    perspiciatis aut, blanditiis perferendis impedit esse architecto ipsa in harum! Voluptatem, cumque!</p>
+
+    <p style="font-size: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Nihil asperiores maxime necessitatibus tenetur! Magnam commodi eligendi vel enim? Alias, 
+    incidunt ipsam veritatis maxime tempora fugit illum assumenda vitae commodi. Facilis ut 
+    id illo placeat, laborum voluptates aliquid fuga temporibus labore neque incidunt, dolores 
+    cupiditate hic tempora harum. Libero officiis et asperiores, sapiente impedit id at ex 
+    error eius quam nobis sit maxime molestias eligendi, itaque aut quaerat molestiae, dignissimos 
+    cum repellendus minima fugit. Unde nesciunt adipisci deleniti et harum pariatur laborum 
+    doloribus a placeat. Iste possimus sapiente suscipit doloribus aperiam, illum, provident 
+    aspernatur, culpa optio ratione laboriosam ea corrupti quisquam voluptates. Molestiae, maxime 
+    fugit! Itaque officia nam quos esse nobis reprehenderit obcaecati enim molestiae soluta sit 
+    quis inventore dicta doloribus tempore iusto explicabo et libero assumenda, mollitia, velit, 
+    nulla beatae omnis! Accusamus, perspiciatis! Laborum repellendus quidem sunt praesentium 
+    perspiciatis aut, blanditiis perferendis impedit esse architecto ipsa in harum! Voluptatem, cumque!</p>
+
+    <p style="font-size: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Nihil asperiores maxime necessitatibus tenetur! Magnam commodi eligendi vel enim? Alias, 
+    incidunt ipsam veritatis maxime tempora fugit illum assumenda vitae commodi. Facilis ut 
+    id illo placeat, laborum voluptates aliquid fuga temporibus labore neque incidunt, dolores 
+    cupiditate hic tempora harum. Libero officiis et asperiores, sapiente impedit id at ex 
+    error eius quam nobis sit maxime molestias eligendi, itaque aut quaerat molestiae, dignissimos 
+    cum repellendus minima fugit. Unde nesciunt adipisci deleniti et harum pariatur laborum 
+    doloribus a placeat. Iste possimus sapiente suscipit doloribus aperiam, illum, provident 
+    aspernatur, culpa optio ratione laboriosam ea corrupti quisquam voluptates. Molestiae, maxime 
+    fugit! Itaque officia nam quos esse nobis reprehenderit obcaecati enim molestiae soluta sit 
+    quis inventore dicta doloribus tempore iusto explicabo et libero assumenda, mollitia, velit, 
+    nulla beatae omnis! Accusamus, perspiciatis! Laborum repellendus quidem sunt praesentium 
+    perspiciatis aut, blanditiis perferendis impedit esse architecto ipsa in harum! Voluptatem, cumque!</p>
+
+</body>
+</html>

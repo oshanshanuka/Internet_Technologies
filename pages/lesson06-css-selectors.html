@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /*element selector*/
+        /*h2 element eken meke select krl atha.therefore 
+        this element select*/
+        h2{
+            color: blue;
+        }
+
+        /*class selector*/
+        /*clz ek select krai.clz ekt text kyl dunna nisa methna
+        text kyl use krai.eka clz ekk hdla e clz eka wenth elementwltda
+        use krnna pluwn..Ex- class selector eke <p></p>,<h1></h1>*/
+        .text{
+            color: chocolate;
+        }
+        .heading{
+            color: red;
+        }
+
+        /*class selector*/
+        /*ekm nmin id dekk thyenna ba*/
+        #main-paragraph{
+            color: violet;
+        }
+
+        /*attribute selector*/
+        a[target="_blank"]{
+            color: green;
+        }
+        
+
+        /*descendant selector*/
+        /*meke div ha p athre space ekk thabai*/
+        div p{
+            color: aqua;
+        }
+
+        /*Child selector(>)*/
+        /*kist style type eken list itemwlt ona style eka
+        select krnna puluwn. Ex-decimal,square*/
+        ul>li{
+            list-style-type: decimal;
+        }
+
+        /*adjacent selector(+)*/
+        h2+p{
+            color: crimson;
+        }
+
+        /*general sibling selector(+)*/
+        /*eyge level eke inna ewtth mek apply wei*/
+        h1~p{
+            color: brown;
+        }
+
+        /*Pseudo-class selector*/
+        /*nam krpu child eke wenskm sidukrai*/
+        li:first-child{
+            color: chartreuse;
+        }
+
+        li:last-child{
+            color: red;
+        }
+
+        /*nth child eke wens krnna ona child eke anke dunnma e adala child eka wens wei*/
+        ;i:nth-child(2){
+            color: yellow;
+        }
+
+        /*Pseudo-class selector*/
+        /*paragraph eke mul akure size eka change krai*/
+        p::first-letter{
+            font-size: 40px;
+        }
+
+        /*check this*/
+
+        /*paragraph eke mulinma enna ona text eka mhma dnnth pluwn*/
+        p::before{
+            content: "oshan";
+        }
+
+        /*aftr dmmama api add krpu text ekt agta add wei*/
+        p::after{
+            content:"shanuka";
+        }
+ 
+        /*grouping selector(,)*/
+        /*same style eke elements grp krai*/
+        h1,h2,h3{
+            color: blue;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    -----1.Element selector-----
+
+    <h2>Hello USA</h2>
+    <h3>Hello</h3>
+    <h2>Hey there</h2>
+
+    -----2.Class selector-----
+    <p span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Asperiores eos maxime perspiciatis maiores fuga ea, fugiat
+       minus, repellat quibusdam aspernatur, eaque quae sint perferendis 
+       nobis dolorum beatae aut quos nemo?</p>
+    
+    <p class="text">Hey</p>
+    <p>ABCDEF</p>
+
+    <h3 class="text">architecto quisquam vel</h3>
+
+    <h1 class="heading">Head</h1>
+    <h2 class="heading">Head</h2>
+    <h3 class="heading">Head</h3>
+    <h4 class="heading">Head</h4>
+    <h5 class="heading">Head</h5>
+    <h6 class="heading">Head</h6>
+
+    -----3.Id selector-----
+
+    <p id="main-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Iusto labore nostrum sapiente expedita qui nihil adipisci 
+       magnam, itaque veniam eveniet sunt ipsam, dolorum eligendi 
+       exercitationem aperiam aliquam, beatae ratione cumque.</p>
+
+   -----4.Attribute selector-----
+   </br>
+   </br>  
+   <a href="https://www.google.com" target="_blank">Google</a>
+   </br>
+   </br>
+
+   -----5.Descendant selector-----
+   <p>Hello guys</p>
+   <div>
+    <p>One</p>
+    <p>Two</p>
+    <p>Three</p>
+   </div>
+
+   -----6.Child selector(>)-----
+
+   <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+   </ul>
+
+   -----7.Adjacent selector(+)-----
+
+   <h2>Adjacent</h2>
+   <p>Checkmate</p>
+   <p>Illegal</p>
+
+   -----8.General sibling selector(~)-----
+
+   <h2>Adjacent</h2>
+   <p>Checkmate</p>
+   <p>Illegal</p>
+   <div>
+    <p>Not applied</p>
+   </div>
+
+   -----9.Pseudo class selector-----
+   <ul>
+    <li>Java</li>
+    <li>Python</li>
+    <li>JavaScript</li>
+   </ul>
+   <p>AAAAAAAAAAAA</p>
+
+   -----10.Pseudo elements selector-----
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Recusandae consequuntur repudiandae veniam nemo beatae eveniet
+      doloremque deserunt suscipit repellat vitae perspiciatis non, 
+      facere molestiae pariatur nam, assumenda ullam. Assumenda, deleniti?</p>
+
+   -----11.Grouping selector(,)-----
+   <h1>Heading 01</h1>
+   <h2>Heading 01</h2>
+   <h3>Heading 01</h3>
+
+</body>
+</html>

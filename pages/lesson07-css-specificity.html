@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        p{
+            background-color: red;
+        }
+
+        .content{
+            background-color: blue;
+        }
+
+        #main-content{
+            background-color: green;
+        }
+
+        .content{
+            background-color: blueviolet;
+        }
+
+        div p{
+            background-color: burlywood;
+        }
+
+        div,.content{
+            background-color: aqua;
+        }
+
+        #card #main-content{
+            background-color: orange;
+        }
+
+        div #main-content{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container" id="card">
+        <p style="background-color: blueviolet;" class="content" id="main-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Et voluptates, amet non aspernatur repellendus omnis nemo 
+            labore, quia voluptate dolore quas odio, assumenda magni. 
+            Necessitatibus qui quo facere perspiciatis error.
+        </p>
+    </div>
+</body>
+</html>
