@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            /*1.grid-template-columns: 10% 20% 30% 40%;  api methna dena percentage ekt ara divwla sizes wens weno */
+            /*2.grid-template-columns: 1fr 2fr 3fr;*/
+            grid-template-columns: repeat(1, 2fr 3fr 1fr );   /*3.kotas 6kt wen krpu 2 ilakkma nisa 2prk repeat wei
+            3,4 wge ewa dmmama thw repeat wei*/
+
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .container>div{
+            border: 1px solid black;
+            padding: 8px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <h1 CSS Grid Layout></h1>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem, provident, ut eum ex, illo qui fugiat nostrum similique 
+        architecto veniam quia. Asperiores, repellat eius quas 
+        veniam soluta iure mollitia voluptatem.</div>
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem, provident, ut eum ex, illo qui fugiat nostrum similique 
+        architecto veniam quia. Asperiores, repellat eius quas 
+        veniam soluta iure mollitia voluptatem.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem, provident, ut eum ex, illo qui fugiat nostrum similique 
+        architecto veniam quia. Asperiores, repellat eius quas 
+        veniam soluta iure mollitia voluptatem.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem, provident, ut eum ex, illo qui fugiat nostrum similique 
+        architecto veniam quia. Asperiores, repellat eius quas 
+        veniam soluta iure mollitia voluptatem.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem, provident, ut eum ex, illo qui fugiat nostrum similique 
+        architecto veniam quia. Asperiores, repellat eius quas 
+        veniam soluta iure mollitia voluptatem.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem, provident, ut eum ex, illo qui fugiat nostrum similique 
+        architecto veniam quia. Asperiores, repellat eius quas 
+        veniam soluta iure mollitia voluptatem.</div>
+    </div>
+</body>
+</html>
