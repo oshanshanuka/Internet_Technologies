@@ -5,16 +5,24 @@ body{
 h1{
     color: red;
     font-size: 50px;
+    text-shadow: 1px 1px;
+    text-align: center;
 }
 
 h2{
     font-size: 30px;
     color: red;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    color: white;
 }
 
 ol,ul,li,p,a{
     font-size: 20px;
-    color: white;
+    color: red;
 }
 
 .myimg{
@@ -38,11 +46,37 @@ span{
 }
 
 .btn{
-    text-align: center;
-    border: 1px solid white;
-    color: red;
-    background-color: black;
+    border: 1px solid red;
+    color: black;
+    padding: 12px 32px;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
+
+p{
+    text-align: center;
+    font-size: 25px;
+}
+
+span{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.center{
+    margin-left: 45%;
+}
+
+/*
+button:hover{
+    background-color: black;
+    color: red;
+    cursor: pointer;
+    /*transition-property: background-color;
+    transition-delay: 2s;
+    transition-timing-function: ease-in;
+    transition-duration: 1s;
+    mekma dnna pluwn lesi wdyk thmai phla thyenne*/
+
 
 

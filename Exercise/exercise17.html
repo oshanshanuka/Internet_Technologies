@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exercise Responsive</title>
+        <link rel="icon" href="/assets/image/WhatsApp Image 2024-07-12 at 01.46.04_6822bacc.jpg">
+        <style>
+          body {
+            margin: 0px;
+            background-color:wheat;
+          }
+          h1 {
+            text-align: center;
+          }
+          .card-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 10px;
+          }
+          .card {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            border-radius: 12px;
+          }
+          .card img {
+            width: 100%;
+            height: 50%;
+            border-radius: 12px;
+          }
+          .name{
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+          }
+          .description {
+            width: 100%;
+            height: 100px;
+            overflow-y: scroll;
+          }
+          #btn-buy {
+            width: 100%;
+            height: 50px;
+            background-color: navy;
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+          }
+
+          #btn-cart {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 12px;
+          }
+
+          @media screen and (min-width: 0px) and (max-width: 575px) {
+              .card-container {
+                grid-template-columns: repeat(1, 1fr);
+              }
+          }
+          @media screen and (min-width: 576px) and (max-width: 767px) {
+              .card-container {
+                grid-template-columns: repeat(2, 1fr);
+              }
+          }
+          @media screen and (min-width: 768px) and (max-width: 991px) {
+              .card-container {
+                grid-template-columns: repeat(3, 1fr);
+              }
+          }
+          @media screen and (min-width: 992px) and (max-width: 1199px) {
+              .card-container {
+                grid-template-columns: repeat(4, 1fr);
+              }
+          }
+          @media screen and (min-width: 1200px) and (max-width: 1399px) {
+              .card-container {
+                grid-template-columns: repeat(5, 1fr);
+              }
+          }
+          @media screen and (min-width: 1400px) {
+              .card-container {
+                grid-template-columns: repeat(6, 1fr);
+              }
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Products Gallery</h1>
+        <div class="card-container">
+          <div class="card">
+            <img src="/assets/image/pexels-pixabay-56866.jpg" alt="laptop image" />
+            <div class="name">
+              <p>Laptop DFN</p>
+              <p>1200.00</p>
+            </div>
+            <div class="description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                vel minima corporis nihil sequi, ex delectus natus quis eligendi
+                libero exercitationem fugit aut aspernatur alias quam nisi cum
+                omnis vero placeat, repudiandae sit est perferendis illo?
+                Obcaecati quod quam tenetur accusantium est. Amet neque ratione
+                ducimus ad id consequuntur asperiores.
+              </p>
+            </div>
+            <button id="btn-buy">Buy Now</button>
+            <button id="btn-cart">Add to cart</button>
+          </div>
+          <div class="card">
+            <img src="/assets/image/pexels-pixabay-56866.jpg" alt="laptop image" />
+            <div class="name">
+              <p>Laptop DFN</p>
+              <p>1200.00</p>
+            </div>
+            <div class="description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                vel minima corporis nihil sequi, ex delectus natus quis eligendi
+                libero exercitationem fugit aut aspernatur alias quam nisi cum
+                omnis vero placeat, repudiandae sit est perferendis illo?
+                Obcaecati quod quam tenetur accusantium est. Amet neque ratione
+                ducimus ad id consequuntur asperiores.
+              </p>
+            </div>
+            <button id="btn-buy">Buy Now</button>
+            <button id="btn-cart">Add to cart</button>
+          </div>
+          <div class="card">
+            <img src="/assets/image/pexels-pixabay-56866.jpg" alt="laptop image" />
+            <div class="name">
+              <p>Laptop DFN</p>
+              <p>1200.00</p>
+            </div>
+            <div class="description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                vel minima corporis nihil sequi, ex delectus natus quis eligendi
+                libero exercitationem fugit aut aspernatur alias quam nisi cum
+                omnis vero placeat, repudiandae sit est perferendis illo?
+                Obcaecati quod quam tenetur accusantium est. Amet neque ratione
+                ducimus ad id consequuntur asperiores.
+              </p>
+            </div>
+            <button id="btn-buy">Buy Now</button>
+            <button id="btn-cart">Add to cart</button>
+          </div>
+          <div class="card">
+            <img src="/assets/image/pexels-pixabay-56866.jpg" alt="laptop image" />
+            <div class="name">
+              <p>Laptop DFN</p>
+              <p>$1200</p>
+            </div>
+            <div class="description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                vel minima corporis nihil sequi, ex delectus natus quis eligendi
+                libero exercitationem fugit aut aspernatur alias quam nisi cum
+                omnis vero placeat, repudiandae sit est perferendis illo?
+                Obcaecati quod quam tenetur accusantium est. Amet neque ratione
+                ducimus ad id consequuntur asperiores.
+              </p>
+            </div>
+            <button id="btn-buy">Buy Now</button>
+            <button id="btn-cart">Add to cart</button>
+          </div>
+          <div class="card">
+            <img src="/assets/image/pexels-pixabay-56866.jpg" alt="laptop image" />
+            <div class="name">
+              <p>Laptop DFN</p>
+              <p>$1200</p>
+            </div>
+            <div class="description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                vel minima corporis nihil sequi, ex delectus natus quis eligendi
+                libero exercitationem fugit aut aspernatur alias quam nisi cum
+                omnis vero placeat, repudiandae sit est perferendis illo?
+                Obcaecati quod quam tenetur accusantium est. Amet neque ratione
+                ducimus ad id consequuntur asperiores.
+              </p>
+            </div>
+            <button id="btn-buy">Buy Now</button>
+            <button id="btn-cart">Add to cart</button>
+          </div>
+          <div class="card">
+            <img src="/assets/image/pexels-pixabay-56866.jpg" alt="laptop image" />
+            <div class="name">
+              <p>Laptop DFN</p>
+              <p>$1200</p>
+            </div>
+            <div class="description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                vel minima corporis nihil sequi, ex delectus natus quis eligendi
+                libero exercitationem fugit aut aspernatur alias quam nisi cum
+                omnis vero placeat, repudiandae sit est perferendis illo?
+                Obcaecati quod quam tenetur accusantium est. Amet neque ratione
+                ducimus ad id consequuntur asperiores.
+              </p>
+            </div>
+            <button id="btn-buy">Buy Now</button>
+            <button id="btn-cart">Add to cart</button>
+          </div>
+          <div class="card">
+            <img src="/assets/image/pexels-pixabay-56866.jpg" alt="laptop image" />
+            <div class="name">
+              <p>Laptop DFN</p>
+              <p>1200.00</p>
+            </div>
+            <div class="description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                vel minima corporis nihil sequi, ex delectus natus quis eligendi
+                libero exercitationem fugit aut aspernatur alias quam nisi cum
+                omnis vero placeat, repudiandae sit est perferendis illo?
+                Obcaecati quod quam tenetur accusantium est. Amet neque ratione
+                ducimus ad id consequuntur asperiores.
+              </p>
+            </div>
+            <button id="btn-buy">Buy Now</button>
+            <button id="btn-cart">Add to cart</button>
+          </div>
+          <div class="card">
+            <img src="/assets/image/pexels-pixabay-56866.jpg" alt="laptop image" />
+            <div class="name">
+              <p>Laptop DFN</p>
+              <p>1200</p>
+            </div>
+            <div class="description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                vel minima corporis nihil sequi, ex delectus natus quis eligendi
+                libero exercitationem fugit aut aspernatur alias quam nisi cum
+                omnis vero placeat, repudiandae sit est perferendis illo?
+                Obcaecati quod quam tenetur accusantium est. Amet neque ratione
+                ducimus ad id consequuntur asperiores.
+              </p>
+            </div>
+            <button id="btn-buy">Buy Now</button>
+            <button id="btn-cart">Add to cart</button>
+          </div>
+        </div>
+      
+  </body>
+</html>

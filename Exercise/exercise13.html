@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerice 13</title>
+    <style>
+        body {
+            margin-left: 25px;
+        }
+
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .box{
+        width: 150px;
+        height: 150px;
+        background-color: wheat;
+        box-shadow: 1px 1px 1px;
+        border: 1px solid white;
+        border-radius: 10px;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+        transition: width 1s ease;
+    }
+
+    .emoji{
+        font-size: 40px;
+    }
+
+    .box:hover .text{
+        opacity: 1;
+    }
+    .text{
+        opacity: 0;
+    }
+
+    .box:hover{
+        width: 200px;
+    }
+
+    .box:hover .emoji{
+        font-size: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+               <span class="emoji">🖕</span>
+               <span class="text">Smiling</span> 
+        </div>
+
+        <div class="box">
+            <span class="emoji">😭</span>
+            <span class="text">Crying</span> 
+        </div>
+
+        <div class="box">
+            <span class="emoji">😍</span>
+            <span class="text">Loving</span> 
+        </div>
+
+        <div class="box">
+            <span class="emoji">🤭</span>
+          <span class="text">Shy</span>
+        </div>
+    </div>
+</body>
+</html>

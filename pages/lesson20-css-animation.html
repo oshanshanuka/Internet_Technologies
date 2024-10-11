@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-animations</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .box{
+            border: 1px solid black;
+            background-color: wheat;
+            height: 100px;
+            width: 100px;
+
+            /*animationwla properties*/
+            /*step 1
+            /*animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;  /*--->animation eka krkenna ona wta gnana.methna 2 nisa 2prk iterate wela stop weno.digtm krgnna onnm iteraate ekt infinite dmai*/
+            /*animation-delay: 0s; /*---->animation ek ptn gnna ona welwa*/
+            /*animation-name: up-down;  /*mekt kmthi meaning full nmk dnna pluwn*/
+
+            /*animation: up-down 2s linear 2 0s; ----> uda 4ma mhma ek line ekkin dnnth pluwn*/
+            /*step 2--->*/animation: up-down 5s linear infinite 0s;
+        }
+
+        /*step 1--->*/
+        /*me @ lkunth ekka thiyena ewa use krnne css tools define krgnna use krnne*/
+        /*@keyframes up-down {
+            0%{
+                transform: translateY(0);  /*---->y axis eke 0 idn ptn gni*/
+                /*transform: translateX(0);
+            }
+            50%{
+                transform: translateY(-50px);  /*---->y axis eke 0 idn bagayk wenkn yai*/
+                /*transform: translateX(50px);
+            }
+            100%{
+                transform: translateY(0); /*---->y axis eke 0ta aphu enw*/
+                /*transform: translateX(0);
+            }
+                */
+        
+            /*step 2--->
+            @keyframes square{
+                from{
+                    background-color: wheat;
+                }
+                to{
+                    background-color: green;
+                }
+            }*/
+
+            @keyframes up-down {
+            0%{
+                transform: translateX(0);  
+            }
+            25%{
+                transform: translateX(500px);
+            }
+            50%{
+                transform: translate(500px,500px);
+            }
+            75%{
+                transform: translateX(500px);
+                transform: translateY(500px);
+            }
+            100%{
+                transform: translateY(500px);
+                transform: translateX(0px);
+            }
+                
+            }
+    </style>
+</head>
+<body>
+    <h1>CSS Animations</h1>
+    <div class="box"></div>
+</body>
+</html>
