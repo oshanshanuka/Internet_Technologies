@@ -43,7 +43,7 @@ greet5('Jupiter');
 
 console.log("===================================================================================")
 
-//5.Rest parameters
+//5.Rest parameters-you can pass any number of arguments-
 
 let sum = (...numbers) => {
     numbers.forEach(number => console.log(number));

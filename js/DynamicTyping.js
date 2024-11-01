@@ -20,4 +20,5 @@ x ={
     name :"oshan",
     age:"22"
 }
-console.log(typeof x)
+console.log(typeof x);
+        

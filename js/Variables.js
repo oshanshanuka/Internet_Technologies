@@ -2,7 +2,7 @@ console.log("Variables file is loaded");
 
 //var,let,const
 
-//1)var
+//1)var-function scope
 /*var firstName = "Oshan";
 console.log(firstName);
 
@@ -16,7 +16,7 @@ function test(){
 test();
 */
 
-/*//2)let 
+/*//2)let - block scope
 //let lastName = "Shanuka";
 
 function testLet(){
@@ -31,11 +31,11 @@ function testLet(){
 testLet();
 */
 
-//3)const
+//3)const - block scope
 //const age = 22;
 
 if(true){
     const m = 10;
-    //m=20;
+    //m=20; const kynne constant value.e kynne nowens wena value wge
     console.log(m);
 }
