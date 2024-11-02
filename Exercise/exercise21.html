@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>exercise21</title>
+    <link rel="stylesheet" href="/assets/image/WhatsApp Image 2024-07-12 at 01.46.04_6822bacc.jpg">
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
+        .box:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script>
+       let boxes = document.querySelectorAll(".box");
+console.log(boxes);
+let currentIndex = 0;
+function changeColor() {
+    boxes.forEach((box) => {
+        box.style.backgroundColor = "gray";
+   
+    });
+    boxes[currentIndex].style.backgroundColor = "red";
+    let previousIndex = (currentIndex - 1 + boxes.length) % boxes.length;
+    boxes[previousIndex].style.backgroundColor = "yellow";
+    //
+    currentIndex = (currentIndex + 1) % boxes.length;
+    }
+setInterval(changeColor, 1000);
+    </script>
+</body>
+</html>

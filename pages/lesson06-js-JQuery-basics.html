@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Basics</title>
+</head>
+<body>
+    <h1 id="heading">JQuery Basics</h1>
+    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur impedit ab facilis porro culpa! Consectetur repudiandae officiis soluta adipisci eveniet reprehenderit labore, reiciendis delectus odit maxime ab aliquam est nobis?</p>
+    <button class="btn">Click here</button>
+    <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita, quibusdam culpa repellat est, optio omnis dolorum, necessitatibus perspiciatis numquam eligendi laborum quaerat! Dignissimos beatae, provident voluptate aspernatur enim earum.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("#heading").css({
+                "color": "red",
+                "font-size": "50px",
+                "text-align": "center"
+            });
+            $(".paragraph").css({
+                "color": "blue",
+                "font-size": "20px",
+                "background-color": "grey"
+            });
+            $(".btn").css({
+                "color": "white",
+                "font-size": "20px",
+                "background-color": "aqua",
+                "padding": "10px 20px",
+                "border": "none",
+                "border-radius": "5px",
+                "cursor": "pointer"
+            }); 
+            $(".btn").on("click", ()=>{
+                alert("Button clicked");
+            });
+            
+            $(".paragraph1").on("mouseenter", ()=>{
+                $(".paragraph1").css({
+                    "color": "red",
+                    "font-size": "20px",
+                    "background-color": "yellow"
+                });
+            }).on("mouseleave", ()=>{
+                $(".paragraph1").css({
+                    "color": "blue",
+                    "font-size": "20px",
+                    "background-color": "grey"
+                });
+            });
+
+        })
+    </script>
+</body>
+</html>
